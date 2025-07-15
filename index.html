@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hot Video Online 🔥</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <h1 class="title">🔥 Hot Video Gallery 🔥</h1>
+
+  <div class="gallery">
+    <div class="video-card" onclick="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+      <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Video 1"/>
+      <p>Video 1</p>
+    </div>
+    <div class="video-card" onclick="openVideo('https://www.youtube.com/embed/tgbNymZ7vqY')">
+      <img src="https://img.youtube.com/vi/tgbNymZ7vqY/hqdefault.jpg" alt="Video 2"/>
+      <p>Video 2</p>
+    </div>
+    <!-- আরও ভিডিও চাইলে এখানে বসাও -->
+  </div>
+
+  <!-- Overlay Player -->
+  <div id="overlay" class="overlay" onclick="closeVideo()">
+    <div class="video-container">
+      <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
